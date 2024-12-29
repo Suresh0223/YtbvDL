@@ -5,8 +5,6 @@ import subprocess
 st.title("YouTube Video Downloader")
 
 url = st.text_input("Enter YouTube URL:")
-if st.button("Download"):
-    download_video(url)
 
 def download_video(url):
     try:
@@ -15,3 +13,5 @@ def download_video(url):
         st.write(f"Downloaded video: {url.split('/')[-1]}.mp3")
     except Exception as e:
         st.write(f"Error: {e}")
+if st.button("Download"):
+    download_video(url)
