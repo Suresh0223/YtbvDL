@@ -7,7 +7,8 @@ st.title("Youtube downloader")
 url = st.text_input("Enter YouTube URL: ")
 
 def download_video(url):
-  if st.button("Download"):
+  st.button(Download_Video)
+  if st.button("Download_Video"):
     download_video(url)
   st.success("Video downloaded successfully")
   try:
